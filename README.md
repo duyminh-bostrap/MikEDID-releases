@@ -11,6 +11,12 @@ This repo only holds the installers. Get the latest one from the [Releases page]
 | `MikEDID.exe` | Windows 64-bit, portable. Nothing to install |
 | `SHA256SUMS.txt` | SHA-256 of every file in the release |
 
+## macOS
+
+The macOS universal build is published with the source project's releases. Open the [latest MikEDID release](https://github.com/duyminh-bostrap/EDID/releases/latest) and download `MikEDID-<version>-macos-universal.zip`.
+
+The app is ad-hoc signed, not notarized. On first launch, right-click **MikEDID.app** and choose **Open**, or remove the quarantine attribute in Terminal with `xattr -dr com.apple.quarantine MikEDID.app`.
+
 ## Verify your download
 
 ```powershell
@@ -30,7 +36,7 @@ The hash must match the line for `MikEDID.exe` in `SHA256SUMS.txt`.
 
 - NVIDIA GPU locks (RTX and Quadro) last for the current boot. Switch on **START WITH OS · PERSIST LOCK** so the background daemon re-applies them at login.
 - The app works fully offline.
-- macOS and Linux builds are not published here yet.
+- Linux builds are not published.
 
 ## Docs and support
 
